@@ -99,9 +99,6 @@ public class HealthMonitoringSystemMainFragment extends Fragment {
 
             saveUserDataToDb();
 
-//            Intent intent = new Intent(MainActivity.this, BloodPressureAndLifeDataFragment.class);
-//            startActivity(intent);
-
             BloodPressureAndLifeDataFragment fragment = new BloodPressureAndLifeDataFragment();
             FragmentManager fragmentManager = getFragmentManager();
             assert fragmentManager != null;

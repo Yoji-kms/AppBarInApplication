@@ -7,21 +7,18 @@ import android.view.ViewGroup;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentManager;
 import androidx.viewpager.widget.ViewPager;
 
 import com.google.android.material.tabs.TabLayout;
 import com.yoji.appbarinapplication.R;
 
 public class BloodPressureAndLifeDataFragment extends Fragment {
-    private View view;
 
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        view = inflater.inflate(R.layout.fragment_blood_pressure_and_life_data, container, false);
+        View view = inflater.inflate(R.layout.fragment_blood_pressure_and_life_data, container, false);
 
         BloodPressureAndLifeDataFragmentAdapter fragmentAdapter = new BloodPressureAndLifeDataFragmentAdapter(this, getChildFragmentManager(), 0);
         ViewPager viewPager = view.findViewById(R.id.swipeViewPagerId);
