@@ -49,10 +49,10 @@ public class MainActivity extends AppCompatActivity {
         int id = item.getItemId();
         switch (id){
             case R.id.health_monitoring_system_app:
-                openNotebookFragment();
+                openHealthMonitoringSystemFragment();
                 break;
             case R.id.notebook_app:
-                openHealthMonitoringSystemFragment();
+                openNotebookFragment();
                 break;
             case R.id.splash_screen_app:
                 openSplashScreenFragment();
